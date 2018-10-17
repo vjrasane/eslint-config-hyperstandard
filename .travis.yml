@@ -5,9 +5,10 @@ after_success:
 - yarn coveralls
 deploy:
   provider: npm
+  email: vjrasane@gmail.com
   skip_cleanup: true
   on:
-    branch: master
     tags: true
+  api_key:
+    secure: u74qGK9BcUQAsB1GGpG/KdRtgQqK/pycdvbwK+HY3VfJvKK58vf8QilvqKTY24UtQbq3TjVnRAQNE+ZEN8gJJ/Rzv3GDqSEpOi2UC1HVuzzOuoYDUTXqbWGRtAewVSRCQm/EpZRzinheJRGXO5z3kq7nVxn7JHYqW9boxAdy486siS6ro0LpMC77M7pNFw0CJDYNfS8aH+kggINbVlO48isyKf0TIiXCfINBGYKUunOR1BD5HxXvSp/tce6a+VOCtIO+FqAm9iFvTbrE5dUBGZMYif/wb6GOer0QAVHFhBgLAsfTrDm96iQBMFjfShd6RUTXNLnGoCbQC/MKi7hTPvKQRZ+gMjwzvtTUSx2Dag7TDKCnz7C4zuRdD74h2IVR8LllJfIQBz4i3vFZqJy2Lm6Gruw3P2OGRqfefnFEi3P7MjBnFJhMgyd0vOAPnF/8J8CH4Do59l8hVg8kgY7AGNbdyPqpehUCrGR9ZjUI6Vp+GF4FoiP/RDN7cEbXSz5X9lAnu8EAvq/2JhfzJZ+KT0f9UKj5LF2BzK2uOZ2jHBqgOLu+nsJMeX8CZdtwOEyHYAMtNMBcUKoBIsjzyAX8J3SmrF9i5A8gM9wGpOZUQjk2Cnj0cDmhLNBn0O/4CVS1r6UWkANGIpgrVR8BzvVMH/YJqfw2PPB6u5yx4dyjBDA=
 cache: yarn
-    
