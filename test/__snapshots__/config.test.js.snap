@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`validate config 1`] = `
+Object {
+  "env": Object {
+    "es6": true,
+    "node": true,
+  },
+  "extends": "standard",
+  "parser": "babel-eslint",
+  "rules": Object {
+    "import/prefer-default-export": Array [
+      "error",
+    ],
+    "max-len": Array [
+      "error",
+      Object {
+        "code": 150,
+      },
+    ],
+    "no-await-in-loop": "error",
+    "no-console": "warn",
+    "no-underscore-dangle": Array [
+      "error",
+    ],
+    "prefer-arrow-callback": "error",
+    "prefer-const": "error",
+    "prefer-destructuring": "error",
+    "prefer-template": "error",
+    "require-await": "error",
+  },
+}
+`;

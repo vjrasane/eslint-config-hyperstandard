@@ -1,0 +1,64 @@
+{
+  "name": "eslint-config-hyperstandard",
+  "version": "1.0.0",
+  "description": "Extended Standard style configuration for ESLint",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vjrasane/eslint-config-hyperstandard.git"
+  },
+  "bugs": {
+    "url": "git+https://github.com/vjrasane/eslint-config-hyperstandard.git/issues"
+  },
+  "homepage": "git+https://github.com/vjrasane/eslint-config-hyperstandard.git#readme",
+  "author": "vjrasane",
+  "main": "src/main.js",
+  "scripts": {
+    "coveralls": "cat ./coverage/lcov.info | coveralls",
+    "lint": "eslint .",
+    "lint:config": "eslint --print-config .",
+    "test": "cross-env NODE_ENV=development jest --coverage",
+    "test:ci": "cross-env NODE_ENV=development CI=true jest --coverage"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ],
+    "package.json": [
+      "format-package -w",
+      "git add"
+    ]
+  },
+  "keywords": [
+    "javascript",
+    "eslint",
+    "config",
+    "style",
+    "standard",
+    "es6"
+  ],
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-eslint": "10.0.1",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "coveralls": "^3.0.2",
+    "cross-env": "^5.2.0",
+    "eslint": "^5.6.1",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "jest": "^23.5.0",
+    "lodash": "^4.17.11"
+  },
+  "optionalDependencies": {
+    "format-package": "4.5.0",
+    "husky": "^1.0.0-rc.13",
+    "lint-staged": "7.3.0"
+  }
+}
